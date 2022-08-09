@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestJava.MaintenanceTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyManitenancePage"/>
+          <include name="WebBrowserLaunching"/>
+          <include name="allPageObject"/>
+        </methods>
+      </class> <!-- TestJava.MaintenanceTest -->
+      <class name="TestJava.DashboardPageTest">
+        <methods>
+          <include name="verifyLogoutFunctionality"/>
+        </methods>
+      </class> <!-- TestJava.DashboardPageTest -->
+      <class name="TestJava.LogOutPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="WebBrowserLaunching"/>
+          <include name="allPageObject"/>
+          <include name="verifyLogoutpage"/>
+        </methods>
+      </class> <!-- TestJava.LogOutPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
